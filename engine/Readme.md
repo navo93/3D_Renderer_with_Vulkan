@@ -1,0 +1,1 @@
+the root directiry is only git initiated
