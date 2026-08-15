@@ -6,6 +6,8 @@ set(SOURCES
     "./src/scene/camera.cpp"
     "./src/instance/vulkanInstance.cpp"
     "./src/device/windowsurface.cpp"
+    "./src/swapchain/swapchainSupport.cpp"
+    "./src/device/vulkanPhysicalDevice.cpp"
 )
 
 link_directories(
@@ -27,6 +29,8 @@ target_include_directories(${PROJECT_NAME}  PRIVATE
     "./src/model"
     "./src/instance"
     "./src/device"
+    "./src/swapchain"
+    
 
 )
 
