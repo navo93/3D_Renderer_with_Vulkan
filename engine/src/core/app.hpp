@@ -6,7 +6,7 @@
 #include"camera.hpp"
 #include"ModelMesh.hpp"
 #include"vulkanInstance.hpp"
-
+#include"windowsurface.hpp"
 
 
 
@@ -29,8 +29,7 @@ class App{
         Window m_window{WIDTH,HEIGHT,"project_engine"};
         Camera m_camera;
         LoadedModel m_generator_model;
-        std::unique_ptr<VulkanInstance> m_instance;
-
-
+        std::unique_ptr<VulkanInstance> m_Instance;
+        std::unique_ptr<WindowSurface>m_surface;
 
 };

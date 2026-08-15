@@ -7,6 +7,7 @@
 
 
 class VulkanInstance{
+public:
   VulkanInstance(const std::string &appName);
   ~VulkanInstance();
 
@@ -14,7 +15,7 @@ class VulkanInstance{
   VulkanInstance(const VulkanInstance &) = delete;
   VulkanInstance &operator=(const VulkanInstance &) = delete;
 
-  VkInstance get() const { return m_instance; }
+  inline VkInstance get() const { return m_instance; }
 
 private:
   void createInstance(const std::string &appName);

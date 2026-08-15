@@ -5,6 +5,7 @@ set(SOURCES
     "./src/window/window.cpp"
     "./src/scene/camera.cpp"
     "./src/instance/vulkanInstance.cpp"
+    "./src/device/windowsurface.cpp"
 )
 
 link_directories(
@@ -12,7 +13,7 @@ link_directories(
     
 )
 
-add_subdirectory("./third_party/glfw/glfw-3.4")
+add_subdirectory("./third_party/glfw/glfw-3.4/include")
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
@@ -25,6 +26,7 @@ target_include_directories(${PROJECT_NAME}  PRIVATE
     "./src/scene"
     "./src/model"
     "./src/instance"
+    "./src/device"
 
 )
 
