@@ -1,7 +1,8 @@
 
 set(SOURCES
-
-    "./src/core"
+    "./main.cpp"
+    "./src/core/app.cpp"
+    "./src/window/window.cpp"
 )
 
 link_directories(
@@ -16,6 +17,9 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 target_include_directories(${PROJECT_NAME}  PRIVATE
 
     "C:/VulkanSDK/1.4.335.0/Include" #glm and vulkan.h 
+    #later tiny_gltf.h and stb_image.h header only
+    "./src/core/"
+    "./src/window"
 
 )
 

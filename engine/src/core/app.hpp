@@ -1,2 +1,28 @@
 #pragma once
+#include<memory>
+#include<chrono>
+#include<functional>
+#include"window.hpp"
 
+
+
+class App{
+    public:
+    static constexpr uint32_t WIDTH=900;
+    static constexpr uint32_t HEIGHT=900;
+    static constexpr int MAX_FRAMES_IN_FLIGHT=3;
+
+    App();
+    ~App();
+
+     App(const App& )=delete;
+     App& operator=(const App& other) = delete;
+
+    void Run();
+
+    private:
+        
+        Window m_window{WIDTH,HEIGHT,"project_engine"};
+        
+
+};

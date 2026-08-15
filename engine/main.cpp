@@ -1,12 +1,14 @@
 #include<iostream>
 #include<stdexcept>
 #include<memory>
+#include<app.hpp>
 
 
 int main(){
     try{
-        
 
+        App app;
+        app.Run();
     }
     catch(std::exception& e){
         std::cerr<<e.what()<<std::endl;
