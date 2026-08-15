@@ -7,6 +7,7 @@
 #include"ModelMesh.hpp"
 #include"vulkanInstance.hpp"
 #include"windowsurface.hpp"
+#include"vulkanPhysicalDevice.hpp"
 
 
 
@@ -31,5 +32,6 @@ class App{
         LoadedModel m_generator_model;
         std::unique_ptr<VulkanInstance> m_Instance;
         std::unique_ptr<WindowSurface>m_surface;
+        std::unique_ptr<PhysicalDevice>m_physicalDevice;
 
 };

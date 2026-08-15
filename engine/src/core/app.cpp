@@ -8,7 +8,8 @@ App::App(){
     std::cout<<"starring the application"<<std::endl;
     m_Instance=std::make_unique<VulkanInstance>("Engine");
     m_surface=std::make_unique<WindowSurface>(m_Instance->get(),m_window.return_handle());
-
+    m_physicalDevice=std::make_unique<PhysicalDevice>(m_Instance->get(),m_surface->get());
+    
 
 }
 
