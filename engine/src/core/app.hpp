@@ -8,6 +8,9 @@
 #include"vulkanInstance.hpp"
 #include"windowsurface.hpp"
 #include"vulkanPhysicalDevice.hpp"
+#include"logicalDevice.hpp"
+#include"swapchain.hpp"
+#include"swapchainImageVIews.hpp"
 
 
 
@@ -33,5 +36,9 @@ class App{
         std::unique_ptr<VulkanInstance> m_Instance;
         std::unique_ptr<WindowSurface>m_surface;
         std::unique_ptr<PhysicalDevice>m_physicalDevice;
+        std::unique_ptr<LogicalDevice>m_logicalDevice;
+        std::unique_ptr<Swapchain>m_swapchain;
+        std::unique_ptr<SwapchainImageViews>m_swapchain_image_views;
+
 
 };

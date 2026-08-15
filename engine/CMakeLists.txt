@@ -8,6 +8,9 @@ set(SOURCES
     "./src/device/windowsurface.cpp"
     "./src/swapchain/swapchainSupport.cpp"
     "./src/device/vulkanPhysicalDevice.cpp"
+    "./src/device/logicalDevice.cpp"
+    "./src/swapchain/swapchain.cpp"
+    "./src/swapchain/swapchainImageViews.cpp"
 )
 
 link_directories(
@@ -31,8 +34,8 @@ target_include_directories(${PROJECT_NAME}  PRIVATE
     "./src/instance"
     "./src/device"
     "./src/swapchain"
+    "./src/device"
     
-
 )
 
 target_link_libraries(${PROJECT_NAME} INTERFACE
@@ -40,6 +43,4 @@ glfw
 vulkan-1.lib
 
 )
-
-
 
