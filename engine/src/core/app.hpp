@@ -3,6 +3,8 @@
 #include<chrono>
 #include<functional>
 #include"window.hpp"
+#include"camera.hpp"
+#include"ModelMesh.hpp"
 
 
 
@@ -23,6 +25,7 @@ class App{
     private:
         
         Window m_window{WIDTH,HEIGHT,"project_engine"};
-        
+        Camera m_camera;
+        LoadedModel m_generator_model;
 
 };

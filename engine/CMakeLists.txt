@@ -3,6 +3,7 @@ set(SOURCES
     "./main.cpp"
     "./src/core/app.cpp"
     "./src/window/window.cpp"
+    "./src/scene/camera.cpp"
 )
 
 link_directories(
@@ -20,6 +21,8 @@ target_include_directories(${PROJECT_NAME}  PRIVATE
     #later tiny_gltf.h and stb_image.h header only
     "./src/core/"
     "./src/window"
+    "./src/scene"
+    "./src/model"
 
 )
 

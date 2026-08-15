@@ -6,12 +6,12 @@
 
 App::App(){
     std::cout<<"starring the application"<<std::endl;
-
+    
 }
 
 
 App::~App(){
-
+    
 
 
 }
