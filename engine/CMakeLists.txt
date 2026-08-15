@@ -4,6 +4,7 @@ set(SOURCES
     "./src/core/app.cpp"
     "./src/window/window.cpp"
     "./src/scene/camera.cpp"
+    "./src/instance/vulkanInstance.cpp"
 )
 
 link_directories(
@@ -23,6 +24,7 @@ target_include_directories(${PROJECT_NAME}  PRIVATE
     "./src/window"
     "./src/scene"
     "./src/model"
+    "./src/instance"
 
 )
 

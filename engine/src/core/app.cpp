@@ -6,7 +6,9 @@
 
 App::App(){
     std::cout<<"starring the application"<<std::endl;
+    m_instance=std::make_unique<VulkanInstance>("Engine");
     
+
 }
 
 
