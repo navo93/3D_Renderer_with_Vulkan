@@ -14,6 +14,7 @@ CubeTextureSet CubeTextureSet::loadFromDirectory(const std::string &directory) {
     set.images.push_back(ImageLoader::loadRgba(directory + "/" + filename));
   }
 
+  //normalising the height and width of all the textures with the width and height of the first image in the directory
   set.width = set.images[0].width;
   set.height = set.images[0].height;
   set.channels = 4;
