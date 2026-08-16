@@ -47,5 +47,7 @@ class App{
         std::unique_ptr<RenderPass>m_renderpass;
         std::unique_ptr<Framebuffers>m_framebuffers;
         std::unique_ptr<CommandPool>m_command_pool;
+        //load all the textures to be applied to the cube under one structure
+        
 
 };

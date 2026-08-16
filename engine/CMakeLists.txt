@@ -15,6 +15,11 @@ set(SOURCES
     "./src/pipeline/RenderPass.cpp"
     "./src/pipeline/Framebuffers.cpp"
     "./src/commands/CommandPool.cpp"
+    "./src/textures/ImageLoader.cpp"
+    "./src/textures/CubeTextureSet.cpp"
+    "./src/vendor/stb_image.cpp"
+    
+        
 )
 
 link_directories(
@@ -41,6 +46,8 @@ target_include_directories(${PROJECT_NAME}  PRIVATE
     "./src/device"
     "./src/pipeline"
     "./src/commands"
+    "./src/vendor"
+    "./src/textures"
     
     
 )
