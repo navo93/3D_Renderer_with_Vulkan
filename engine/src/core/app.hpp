@@ -11,6 +11,7 @@
 #include"logicalDevice.hpp"
 #include"swapchain.hpp"
 #include"swapchainImageVIews.hpp"
+#include"DepthResources.hpp"
 
 
 
@@ -39,6 +40,8 @@ class App{
         std::unique_ptr<LogicalDevice>m_logicalDevice;
         std::unique_ptr<Swapchain>m_swapchain;
         std::unique_ptr<SwapchainImageViews>m_swapchain_image_views;
+        std::unique_ptr<DepthResources>m_depth_resource;//creating only one beacuse i can reuse the same image again after each frame
+
 
 
 };
