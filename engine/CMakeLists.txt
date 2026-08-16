@@ -12,6 +12,7 @@ set(SOURCES
     "./src/swapchain/swapchain.cpp"
     "./src/swapchain/swapchainImageViews.cpp"
     "./src/pipeline/DepthResources.cpp"
+    "./src/pipeline/RenderPass.cpp"
 )
 
 link_directories(
@@ -37,6 +38,7 @@ target_include_directories(${PROJECT_NAME}  PRIVATE
     "./src/swapchain"
     "./src/device"
     "./src/pipeline"
+    
     
 )
 
