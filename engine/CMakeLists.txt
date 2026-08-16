@@ -13,6 +13,7 @@ set(SOURCES
     "./src/swapchain/swapchainImageViews.cpp"
     "./src/pipeline/DepthResources.cpp"
     "./src/pipeline/RenderPass.cpp"
+    "./src/pipeline/Framebuffers.cpp"
 )
 
 link_directories(
