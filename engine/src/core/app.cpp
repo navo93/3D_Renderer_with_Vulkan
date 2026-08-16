@@ -15,7 +15,7 @@ App::App(){
     m_depth_resource=std::make_unique<DepthResources>(m_logicalDevice->get(),m_physicalDevice->get(),m_swapchain->getExtent());
     m_renderpass=std::make_unique<RenderPass>(m_logicalDevice->get(),m_swapchain->getFormat(),m_depth_resource->getFormat());
     m_framebuffers=std::make_unique<Framebuffers>(m_logicalDevice->get(),m_renderpass->get(),m_swapchain_image_views->get(),m_depth_resource->getImageView(),m_swapchain->getExtent());
-    
+    m_command_pool=std::make_unique<CommandPool>(m_logicalDevice->get(),m_logicalDevice->getGraphicsQueueIndex());
 }
 
 

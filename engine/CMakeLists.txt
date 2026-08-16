@@ -14,6 +14,7 @@ set(SOURCES
     "./src/pipeline/DepthResources.cpp"
     "./src/pipeline/RenderPass.cpp"
     "./src/pipeline/Framebuffers.cpp"
+    "./src/commands/CommandPool.cpp"
 )
 
 link_directories(
@@ -39,6 +40,7 @@ target_include_directories(${PROJECT_NAME}  PRIVATE
     "./src/swapchain"
     "./src/device"
     "./src/pipeline"
+    "./src/commands"
     
     
 )

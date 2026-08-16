@@ -14,6 +14,7 @@
 #include"DepthResources.hpp"
 #include"RenderPass.hpp"
 #include"Framebuffers.hpp"
+#include"CommandPool.hpp"
 
 
 
@@ -45,5 +46,6 @@ class App{
         std::unique_ptr<DepthResources>m_depth_resource;//creating only one beacuse i can reuse the same image again after each frame
         std::unique_ptr<RenderPass>m_renderpass;
         std::unique_ptr<Framebuffers>m_framebuffers;
+        std::unique_ptr<CommandPool>m_command_pool;
 
 };
