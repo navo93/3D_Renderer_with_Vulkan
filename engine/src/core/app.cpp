@@ -55,7 +55,7 @@ App::App(){
     //loading all the textures for the cube
     
     CubeTextureSet m_cube_textures=LoadTexturesCube();//this is possible beacuse we enables the move operator
-    //m_cube_textures now holds the pointer to the cubes's textures in the cpu ram
+    //m_cube_textures.pixels now holds the pointer to the cubes's textures in the cpu ram
     //information about the textures loaded
     std::cout<<"no of tetures loaded: "<<m_cube_textures.images.size()<<std::endl;
     std::cout<<"the extent of these images are:"<<"width->"<<m_cube_textures.width<<" height->"<<m_cube_textures.height<<std::endl;
@@ -67,11 +67,6 @@ App::App(){
     //skybox_image.pixels now hold the pointer to the ram loaded skybox image
     std::cout<<"cubemap image's width:"<<skybox_image.width<<" height->"<<skybox_image.height<<std::endl;
 
-
-
-
-
-    
 }
 
 

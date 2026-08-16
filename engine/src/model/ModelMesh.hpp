@@ -3,7 +3,7 @@
 #include"glm/glm.hpp"
 #include<vector>
 #include<string>
-
+//this represents the per-vertex of the loaded model
 struct ModelVertex{
     glm::vec3 position{0.0f};
     glm::vec3 normal{0.0f,1.0f,0.0f}; //per face normal
